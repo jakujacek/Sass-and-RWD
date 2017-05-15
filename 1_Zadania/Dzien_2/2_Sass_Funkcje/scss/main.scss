@@ -1,0 +1,46 @@
+$color: black;
+
+
+p {
+  color: lighten($color, 40%);
+}
+
+// Zadanie 2 z wykładowcą
+@for $i from 1 through 5 {
+  h#{$i} {
+    color: lighten($color, 15%*$i);
+  }
+}
+
+// Zadanie 1
+
+
+
+@function test1($number){
+  @return percentage($number);
+}
+p{
+  font-size: test1(7);
+}
+
+
+// Zadanie 2
+
+$color1: red;
+$color2: blue;
+
+$mixed: mix($color1, $color2, 70%);
+
+
+// Zadanie 3
+
+
+@function test($number1,$number2){
+  @return $number1 + $number2;
+}
+
+.box{
+  width: test(50px, 100px);
+  height: 50px;
+  background-color: $mixed;
+}

@@ -1,0 +1,50 @@
+// Zadanie z wykładowcą
+
+$simple-list: beige, blue, green;
+$map:(
+width1: 1200px,
+width2: 800px,
+width3: 300px,
+  );
+
+body {
+  background-color: nth($simple-list, 1);
+  width: map-get( $map, width1);
+  header {
+    background-color: nth($simple-list, 2);
+    width: map-get( $map, width2);
+  }
+  section {
+    &.main-width{
+      background-color: nth($simple-list, 3);
+      width: map-get( $map, width3);
+
+    }
+  }
+}
+//Zadanie 1
+$colors: (
+  background: #5eb9a5,
+  text: #ade6a9,
+  foot: #bf70c9,
+  div: #942d30,
+  button: red,
+);
+
+body{
+  background-color: map-get($colors, background);
+  color: map-get($colors, text);
+  footer {
+    background-color: map-get($colors, foot);
+  }
+}
+
+// Zadanie 2
+
+$width-map: (
+min-width: 300px,
+max-width: 1000px
+);
+
+
+$to-list: map-values($width-map);

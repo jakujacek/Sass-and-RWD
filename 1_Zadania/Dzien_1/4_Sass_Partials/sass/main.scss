@@ -1,0 +1,12 @@
+//Import Modules
+@import "modules//all";
+@import "modules/colors";
+
+//Import Partials
+@import "partials//base";
+@import "partials//header";
+@import "partials//footer";
+
+body {
+  background-color: $main-color;
+}

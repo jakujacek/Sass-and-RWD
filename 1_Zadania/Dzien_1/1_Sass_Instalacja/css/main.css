@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: 1200px; }
+
+.container .row {
+  margin-top: -10px;
+  margin-bottom: -10px; }
+
+.container .row:before, .container .row:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.container .row [class*="col-md-"] {
+  min-height: 1px;
+  float: left;
+  width: 100%;
+  padding: 10px 0px;
+  border: 5px solid white;
+  word-wrap: break-word;
+  height: 100px;
+  background-color: #169060;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container .row #sidebar {
+  display: none;
+  border: none; }
+
+.container .row #small-box1 {
+  width: 50%; }
+
+.container .row #small-box2 {
+  width: 50%; }
+
+@media (min-width: 600px) {
+  .container .row #sidebar {
+    display: block; }
+  .container .row .col-md-1, .container .row .col-sm-1 {
+    width: 8.33333%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-2, .container .row .col-sm-2 {
+    width: 16.66667%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-3, .container .row .col-sm-3 {
+    width: 25%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-4, .container .row .col-sm-4 {
+    width: 33.33333%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-5, .container .row .col-sm-5 {
+    width: 41.66667%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-6, .container .row .col-sm-6 {
+    width: 50%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-7, .container .row .col-sm-7 {
+    width: 58.33333%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-8, .container .row .col-sm-8 {
+    width: 66.66667%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-9, .container .row .col-sm-9 {
+    width: 75%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-10, .container .row .col-sm-10 {
+    width: 83.33333%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-11, .container .row .col-sm-11 {
+    width: 91.66667%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; }
+  .container .row .col-md-12, .container .row .col-sm-12 {
+    width: 100%;
+    height: 60px; }
+  .container .row #sidebar {
+    height: 180px; } }

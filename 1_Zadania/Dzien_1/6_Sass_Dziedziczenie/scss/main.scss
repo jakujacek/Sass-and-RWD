@@ -1,0 +1,50 @@
+%clearfix {
+  &:after, &:before {
+    clear: both;
+    display: block;
+    content: "";
+  }
+}
+
+%boxes {
+  width: 400px;
+  height: 60px;
+  font-size: 12px;
+  text-align: left;
+  margin: 10px auto;
+  padding: 7px;
+}
+
+.container {
+    .success{
+    @extend %boxes;
+    background-color: #EBFFA9;
+    border: 1px solid lightgreen;
+  }
+  .error{
+    @extend %boxes;
+      background-color: lightpink;
+      border: 1px solid pink;
+  }
+  .info{
+    @extend %boxes;
+    background-color: lightblue;
+    border: 1px solid #446EE4;
+  }
+}
+
+.test-mixin {
+  @extend %clearfix;
+  .left_box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+  }
+  .right_box{
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+  }
+}

@@ -1,0 +1,96 @@
+.test {
+  font-size: 30px;
+  p {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 20px;
+  }
+  strong {
+    font-size: 1em;
+  }
+}
+
+// Zadanie 1
+
+.panel{
+  font-size: 40px;
+  p{
+    font-size: 0.5em;
+  }
+}
+
+// Zadanie 2
+
+.bg_box {
+  font-size: 15px;
+  .box{
+    font-size: 2em;
+    width: 2em;
+    border: 1px solid red;
+  }
+}
+
+// Zadanie 3 i 4
+html {
+  font-size: 24px;
+}
+.container {
+  font-size: 8px;
+  p {
+    font-size: 3em;
+  }
+  .wolf_text {
+    font-size: 1rem;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid black;
+  }
+}
+
+// Zadanie 5
+.winnie_the_pooh {
+  font-size: 10px;
+  blockquote{
+    font-size: 300%;
+  }
+}
+// Zadanie 6
+
+.images{
+  //width: 80%;
+  border: 1px solid red;
+  .img_one{
+    background-image: url("../images/cat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30%;
+    height: 200px;
+  }
+}
+
+// Zadanie 7
+// po zakomentowaniu szerokosci sekcji
+// domyślna szerokość wyszła 100%
+
+// Zadanie 8 i 9
+// po zakomentowaniu ojca przyjął on wielkość dziadka,
+.test_hight_grandpa {
+  border: 1px solid red;
+  height: 50px;
+  .test_height_daddy{
+    border: 2px solid black;
+    //height: 200%;
+    .test_height_baby{
+      border: 2px solid blue;
+      height: 50%;
+    }
+  }
+}
+
+// Zadanie 10
+h1 {
+  margin:50vh 50vw;
+  font-size: 20px;
+}

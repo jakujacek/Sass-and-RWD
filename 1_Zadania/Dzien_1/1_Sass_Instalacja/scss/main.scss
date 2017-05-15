@@ -1,0 +1,59 @@
+$base-width:100%/12;
+
+*{
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  .row{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    &:before, &:after{
+      content: "";
+      clear: both;
+      display: table;
+    }
+    [class*="col-md-"]{
+      min-height: 1px;
+      float: left;
+      width: 100%;
+      padding: 10px 0px;
+      border: 5px solid white;
+      word-wrap: break-word;
+      height: 100px;
+      background-color: #169060;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #sidebar {
+      display: none;
+      border: none;
+    }
+    #small-box1{
+      width: 50%;
+    }
+    #small-box2{
+      width: 50%;
+    }
+  }
+}
+ @media (min-width: 600px){
+     .container{
+       .row{
+         #sidebar{
+           display: block;
+         }
+       @for $i from 1 through 12{
+         .col-md-#{$i}, .col-sm-#{$i}{
+           width: $base-width * $i;
+           height: 60px;
+         }
+         #sidebar{
+           height: 180px;
+         }
+       }
+     }
+   }
+ }

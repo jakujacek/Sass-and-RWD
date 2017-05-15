@@ -1,0 +1,77 @@
+$line-height: 45px;
+$font-size: 40px;
+
+
+* {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@for $i from 1 through 4 {
+  h#{$i}{
+    font-size: $font-size - $i*2;
+    line-height: $line-height - $i*2;
+  }
+}
+
+// Zadanie 1
+
+
+@mixin timeOfDay($timeOfDay){
+
+  @if $timeOfDay == "morning" {
+    background-color: orange;
+  }
+  @else if $timeOfDay == "midday" {
+    background-color: #dbda80;
+  }
+  @else if $timeOfDay == "evening" {
+    background-color: navy;
+  }
+  @else if $timeOfDay == "night" {
+    background-color: black;
+  }
+
+}
+
+body {
+  @include timeOfDay("midday");
+}
+
+
+// Zadanie 2
+
+@for $i from 1 through 4 {
+  h#{$i} {
+    font-size: $font-size - $i*2;
+    line-height: $line-height - $i*2;
+
+    @if $i == 1 {
+      color: #66b64c;
+    } @else if $i == 2{
+      color: #40cb23;
+    } @else if $i == 3{
+      color: #17632f;
+    } @else if $i == 4{
+      color: #e3543b;
+    }
+  }
+}
+div {
+  width: 100px;
+  height: 100px;
+}
+
+// Zadanie 2
+@for $i from 1 through 10 {
+  @if $i%2 == 0 {
+    .block_#{$i} {
+      border: 2px solid orange;
+    }
+  }
+  @else {
+    .block_#{$i} {
+      border: 2px solid blue;
+    }
+  }
+}
